@@ -45,15 +45,37 @@ export default function QuickInquiryForm() {
     return Object.keys(newErrors).length === 0
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (validateForm()) {
-      console.log("Form submitted:", formData)
-      // Handle form submission
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault()
+  if (!validateForm()) return
+
+  try {
+    const response = await fetch("/api/inquiry", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        fullName: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        destination: formData.destination,
+        course: formData.course,
+      }),
+    })
+
+    const result = await response.json()
+
+    if (result.success) {
       alert("Thank you! We will contact you soon for your free consultation.")
       setFormData({ name: "", email: "", phone: "", destination: "", course: "" })
+    } else {
+      alert("Something went wrong: " + result.error)
     }
+  } catch (error) {
+    console.error("Submission error:", error)
+    alert("Failed to submit form. Please try again.")
   }
+}
+
 
   const handleInputChange = (field: string, value: string) => {
     setFormData((prev) => ({ ...prev, [field]: value }))

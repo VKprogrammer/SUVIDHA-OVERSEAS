@@ -1,11 +1,13 @@
 "use client"
-
+import AuthModal from "@/components/ui/auth-modal" // adjust path if needed
 import { useState } from "react"
 import { Menu, X, Phone, Mail } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [showAuth, setShowAuth] = useState(false)
+
 
   const navigation = [
     { name: "Home", href: "#home" },
@@ -61,7 +63,9 @@ export default function Header() {
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
+            <Button variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50"
+            onClick={() => setShowAuth(true)}
+            >
               Login
             </Button>
             <Button className="bg-orange-500 hover:bg-orange-600 text-white">Book Free Consultation</Button>
@@ -90,8 +94,12 @@ export default function Header() {
                 </a>
               ))}
               <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="outline" className="border-blue-600 text-blue-600">
-                  Login
+                <Button 
+                 variant="outline" className="border-blue-600 text-blue-600"
+                 onClick={() => setShowAuth(true)}
+                >
+                 Login
+                  
                 </Button>
                 <Button className="bg-orange-500 hover:bg-orange-600 text-white">Book Free Consultation</Button>
               </div>
@@ -99,6 +107,7 @@ export default function Header() {
           </div>
         )}
       </nav>
+      {showAuth && <AuthModal onClose={() => setShowAuth(false)} />}
     </header>
   )
 }
