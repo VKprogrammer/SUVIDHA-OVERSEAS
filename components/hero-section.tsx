@@ -30,13 +30,17 @@ export default function HeroSection() {
                 Start Your Journey Today
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 text-lg"
-              >
-                Watch Success Stories
-              </Button>
+
+               <a href="#success">
+  <Button
+    size="lg"
+    variant="outline"
+    className="border-white text-orange-600 hover:bg-white hover:text-blue-600 px-8 py-4 text-lg"
+  >
+    Watch Success Stories
+  </Button>
+</a>
+
             </div>
 
             {/* Stats */}
