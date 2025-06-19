@@ -6,6 +6,8 @@ import SuccessStories from "@/components/success-stories"
 import FeaturedDestinations from "@/components/featured-destinations"
 import InteractiveTools from "@/components/interactive-tools"
 import Footer from "@/components/footer"
+import BlogPage from "@/components/blogs/BlogPage"
+
 
 export default function HomePage() {
   return (
@@ -18,6 +20,7 @@ export default function HomePage() {
         <InteractiveTools />
         <FeaturedDestinations />
         <SuccessStories />
+        <BlogPage/>
       </main>
       <Footer />
     </div>
