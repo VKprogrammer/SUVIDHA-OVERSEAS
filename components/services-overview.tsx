@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { GraduationCap, FileText, Plane, DollarSign, BookOpen, Users, ArrowRight } from "lucide-react"
+import Link from "next/link";
 
 export default function ServicesOverview() {
   const services = [
@@ -10,6 +11,7 @@ export default function ServicesOverview() {
       description: "Get personalized guidance from certified education consultants with 10+ years of experience.",
       features: ["One-on-one counseling", "Career guidance", "University selection"],
       color: "bg-blue-500",
+      link: "/free-consultation",
     },
     {
       icon: GraduationCap,
@@ -17,6 +19,7 @@ export default function ServicesOverview() {
       description: "Find the perfect university and course that matches your academic profile and career goals.",
       features: ["500+ partner universities", "Course matching", "Ranking analysis"],
       color: "bg-green-500",
+      link:"/university-course-selection",
     },
     {
       icon: FileText,
@@ -24,6 +27,7 @@ export default function ServicesOverview() {
       description: "Complete application support including SOP writing, document preparation, and submission.",
       features: ["SOP writing", "Document verification", "Application tracking"],
       color: "bg-purple-500",
+      link:"/admission-application"
     },
     {
       icon: Plane,
@@ -31,6 +35,7 @@ export default function ServicesOverview() {
       description: "End-to-end visa assistance with 95% success rate and expert guidance throughout the process.",
       features: ["Document checklist", "Interview preparation", "Status tracking"],
       color: "bg-orange-500",
+      link: "/visa-processing",
     },
     {
       icon: DollarSign,
@@ -39,6 +44,7 @@ export default function ServicesOverview() {
         "Maximize your funding opportunities with our comprehensive scholarship database and application support.",
       features: ["Scholarship search", "Application assistance", "Financial planning"],
       color: "bg-red-500",
+      link:"/scholarship-guidance"
     },
     {
       icon: BookOpen,
@@ -46,6 +52,7 @@ export default function ServicesOverview() {
       description: "IELTS, TOEFL, GRE, GMAT preparation with experienced trainers and proven study materials.",
       features: ["Expert trainers", "Mock tests", "Score improvement"],
       color: "bg-indigo-500",
+      link:"/test-preparation"
     },
   ]
 
@@ -81,10 +88,20 @@ export default function ServicesOverview() {
                     </li>
                   ))}
                 </ul>
-                <Button variant="outline" className="group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                  Learn More
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                {service.link ? (
+  <Link href={service.link}>
+    <Button variant="outline" className="group-hover:bg-blue-600 group-hover:text-white transition-colors">
+      Learn More
+      <ArrowRight className="ml-2 h-4 w-4" />
+    </Button>
+  </Link>
+) : (
+  <Button variant="outline" disabled className="opacity-50 cursor-not-allowed">
+    Learn More
+    <ArrowRight className="ml-2 h-4 w-4" />
+  </Button>
+)}
+
               </CardContent>
             </Card>
           ))}
