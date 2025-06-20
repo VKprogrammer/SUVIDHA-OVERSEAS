@@ -62,7 +62,7 @@ export default function HeroSection() {
               <img
                 src="/studyabroad.jpg?height=500&width=500"
                 alt="Students studying abroad"
-                className="w-full h-full object-cover rounded-xl"
+                className="w-full h-full object-cover object-left-[60%] rounded-xl"
               />
             </div>
             {/* Floating elements */}

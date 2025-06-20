@@ -25,7 +25,7 @@ export default function SuccessStories() {
       university: "University of Toronto",
       course: "MBA",
       country: "Canada",
-      image: "/rahul.jpg.svg?height=100&width=100",
+      image: "/rahul.jpg",
       rating: 5,
       testimonial:
         "The team at Suvidha Overseas provided personalized attention and helped me navigate the complex admission process. I'm now pursuing my MBA at one of Canada's top universities.",

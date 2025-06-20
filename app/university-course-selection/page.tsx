@@ -655,6 +655,11 @@ export default function UniversityCourseSelectionPage() {
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
                     <User className="w-6 h-6 text-blue-600" />
+                    <img
+          src="/priya.avif"
+          alt="priya"
+          className="w-full h-full object-cover object-center"
+        />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Priya Sharma</h4>
@@ -672,9 +677,15 @@ export default function UniversityCourseSelectionPage() {
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mr-4">
-                    <User className="w-6 h-6 text-indigo-600" />
+                    <User className="w-6 h-6 text-indigo-600"  />
+                    <img
+          src="/rahul.jpg"
+          alt="Rahul Patel"
+          className="w-full h-full object-cover object-center"
+        />
                   </div>
                   <div>
+                    
                     <h4 className="font-semibold text-gray-900">Rahul Patel</h4>
                     <p className="text-sm text-gray-600">MBA, London Business School</p>
                   </div>
@@ -691,6 +702,11 @@ export default function UniversityCourseSelectionPage() {
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
                     <User className="w-6 h-6 text-purple-600" />
+                    <img
+          src="/sharma.jpg"
+          alt=" anita singh"
+          className="w-full h-full object-cover object-center"
+        />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Anita Singh</h4>

@@ -513,8 +513,13 @@ export default function TestPreparationPage() {
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-blue-600 font-semibold">KS</span>
-                  </div>
+                    
+                    <img
+            src="/kunal.avif"
+            alt="Kunal S."
+            className="w-full h-full object-cover object-center"
+          />
+            </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Kunal S.</h4>
                     <p className="text-sm text-gray-600">GRE Candidate</p>
@@ -533,7 +538,11 @@ export default function TestPreparationPage() {
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-green-600 font-semibold">PR</span>
+                    <img
+            src="/priyar.jpg"
+            alt="priyar."
+            className="w-full h-full object-cover object-center"
+          />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Priya R.</h4>
@@ -553,7 +562,11 @@ export default function TestPreparationPage() {
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-purple-600 font-semibold">AM</span>
+                    <img
+            src="/arjunm.avif"
+            alt="arjunm"
+            className="w-full h-full object-cover object-center"
+          />
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Arjun M.</h4>
