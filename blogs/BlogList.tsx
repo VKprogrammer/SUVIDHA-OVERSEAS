@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Star, Quote } from "lucide-react"
 
+
 export default function BlogList({ blogs }: { blogs: any[] }) {
   return (
     <div className="space-y-6">

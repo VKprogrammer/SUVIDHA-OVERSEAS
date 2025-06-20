@@ -6,7 +6,7 @@ import SuccessStories from "@/components/success-stories"
 import FeaturedDestinations from "@/components/featured-destinations"
 import InteractiveTools from "@/components/interactive-tools"
 import Footer from "@/components/footer"
-import BlogPage from "@/blogs/BlogPage"
+import BlogPage from "@/blogs/blogPage"
 
 
 export default function HomePage() {

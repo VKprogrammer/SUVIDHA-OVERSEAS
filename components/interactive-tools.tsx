@@ -1,8 +1,13 @@
+"use client"
+
+import { useRouter } from "next/navigation"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Calculator, Search, CheckCircle, FileCheck, ArrowRight } from "lucide-react"
 
 export default function InteractiveTools() {
+  const router = useRouter()
+
   const tools = [
     {
       icon: CheckCircle,
@@ -11,6 +16,7 @@ export default function InteractiveTools() {
       features: ["Instant results", "University recommendations", "Course suggestions"],
       buttonText: "Check Eligibility",
       color: "bg-green-500",
+      route: "/eligibility",
     },
     {
       icon: Calculator,
@@ -19,6 +25,7 @@ export default function InteractiveTools() {
       features: ["Country-wise breakdown", "Living cost estimates", "Scholarship deductions"],
       buttonText: "Calculate Costs",
       color: "bg-blue-500",
+      route: "/cost",
     },
     {
       icon: Search,
@@ -27,6 +34,7 @@ export default function InteractiveTools() {
       features: ["500+ universities", "Advanced filters", "Comparison tool"],
       buttonText: "Find Universities",
       color: "bg-purple-500",
+      route: "/universities",
     },
     {
       icon: FileCheck,
@@ -35,8 +43,13 @@ export default function InteractiveTools() {
       features: ["Country-specific info", "Document checklist", "Processing times"],
       buttonText: "Check Requirements",
       color: "bg-orange-500",
+      route: "/visa",
     },
   ]
+
+  const handleNavigation = (route: string) => {
+    router.push(route)
+  }
 
   return (
     <section id="tools" className="py-20 bg-gray-50">
@@ -44,8 +57,7 @@ export default function InteractiveTools() {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Interactive Tools & Resources</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Use our free interactive tools to plan your study abroad journey. Get instant results and personalized
-            recommendations.
+            Use our free interactive tools to plan your study abroad journey. Get instant results and personalized recommendations.
           </p>
         </div>
 
@@ -70,7 +82,10 @@ export default function InteractiveTools() {
                     </li>
                   ))}
                 </ul>
-                <Button className={`w-full ${tool.color} hover:opacity-90 text-white`}>
+                <Button
+                  className={`w-full ${tool.color} hover:opacity-90 text-white`}
+                  onClick={() => handleNavigation(tool.route)}
+                >
                   {tool.buttonText}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
@@ -82,8 +97,7 @@ export default function InteractiveTools() {
         <div className="mt-16 bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4">Need Personalized Guidance?</h3>
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
-            While our tools provide great insights, nothing beats personalized consultation. Book a free session with
-            our expert counselors.
+            While our tools provide great insights, nothing beats personalized consultation. Book a free session with our expert counselors.
           </p>
           <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
             Book Free Consultation
