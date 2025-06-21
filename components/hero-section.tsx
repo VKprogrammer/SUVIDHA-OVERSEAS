@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Users, GraduationCap, Award } from "lucide-react"
-
+import Image from "next/image"
 export default function HeroSection() {
   const stats = [
     { icon: Users, label: "Students Helped", value: "5000+" },
@@ -60,7 +60,7 @@ export default function HeroSection() {
           <div className="relative">
             <div className="aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-orange-400 to-orange-600 p-8">
               <img
-                src="/placeholder.svg?height=500&width=500"
+                src="/studyabroad.jpg?height=500&width=500"
                 alt="Students studying abroad"
                 className="w-full h-full object-cover rounded-xl"
               />

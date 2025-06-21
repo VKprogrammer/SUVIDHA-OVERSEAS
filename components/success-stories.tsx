@@ -14,7 +14,7 @@ export default function SuccessStories() {
       university: "Stanford University",
       course: "MS Computer Science",
       country: "USA",
-      image: "/placeholder.svg?height=100&width=100",
+      image: "/priya.avif?height=100&width=100",
       rating: 5,
       testimonial:
         "Suvidha Overseas made my dream of studying at Stanford a reality. Their guidance throughout the application process was exceptional, and they helped me secure a scholarship worth $25,000.",
@@ -25,7 +25,7 @@ export default function SuccessStories() {
       university: "University of Toronto",
       course: "MBA",
       country: "Canada",
-      image: "/placeholder.svg?height=100&width=100",
+      image: "/rahul.jpg.svg?height=100&width=100",
       rating: 5,
       testimonial:
         "The team at Suvidha Overseas provided personalized attention and helped me navigate the complex admission process. I'm now pursuing my MBA at one of Canada's top universities.",
@@ -36,7 +36,7 @@ export default function SuccessStories() {
       university: "University of Melbourne",
       course: "MS Data Science",
       country: "Australia",
-      image: "/placeholder.svg?height=100&width=100",
+      image: "/sneha.jpeg?height=100&width=100",
       rating: 5,
       testimonial:
         "From university selection to visa approval, Suvidha Overseas supported me at every step. Their expertise in Australian education system is remarkable.",
@@ -47,7 +47,7 @@ export default function SuccessStories() {
       university: "Technical University of Munich",
       course: "MS Mechanical Engineering",
       country: "Germany",
-      image: "/placeholder.svg?height=100&width=100",
+      image: "/arjun.jpg?height=100&width=100",
       rating: 5,
       testimonial:
         "I was initially confused about studying in Germany, but Suvidha Overseas provided clear guidance and helped me secure admission with minimal tuition fees.",

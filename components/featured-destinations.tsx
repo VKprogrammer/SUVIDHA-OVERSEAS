@@ -7,7 +7,7 @@ export default function FeaturedDestinations() {
     {
       country: "United States",
       flag: "🇺🇸",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/us.jpeg?height=200&width=300",
       universities: "4000+",
       avgCost: "$30,000-60,000",
       duration: "1-4 years",
@@ -17,7 +17,7 @@ export default function FeaturedDestinations() {
     {
       country: "Canada",
       flag: "🇨🇦",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/canada.jpg?height=200&width=300",
       universities: "100+",
       avgCost: "$20,000-40,000",
       duration: "1-4 years",
@@ -27,7 +27,7 @@ export default function FeaturedDestinations() {
     {
       country: "United Kingdom",
       flag: "🇬🇧",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/uk.jpg?height=200&width=300",
       universities: "150+",
       avgCost: "$25,000-50,000",
       duration: "1-3 years",
@@ -37,7 +37,7 @@ export default function FeaturedDestinations() {
     {
       country: "Australia",
       flag: "🇦🇺",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/aus.jpg?height=200&width=300",
       universities: "40+",
       avgCost: "$25,000-45,000",
       duration: "1-4 years",
@@ -47,7 +47,7 @@ export default function FeaturedDestinations() {
     {
       country: "Germany",
       flag: "🇩🇪",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/germany.jpeg?height=200&width=300",
       universities: "400+",
       avgCost: "$500-20,000",
       duration: "1-3 years",
@@ -57,7 +57,7 @@ export default function FeaturedDestinations() {
     {
       country: "New Zealand",
       flag: "🇳🇿",
-      image: "/placeholder.svg?height=200&width=300",
+      image: "/nz.jpg?height=200&width=300",
       universities: "8+",
       avgCost: "$20,000-35,000",
       duration: "1-4 years",
