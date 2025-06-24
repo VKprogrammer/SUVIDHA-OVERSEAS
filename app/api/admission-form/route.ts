@@ -5,7 +5,7 @@ import mysql from "mysql2/promise";
 const dbConfig = {
   host: "localhost",
   user: "root",
-  password: "vijay@2003",      // Replace with your MySQL password
+  password: "",      // Replace with your MySQL password
   database: "suvidha_db",
 //   port: 3306          // Use 80 only if your MySQL is configured on port 80
 };
