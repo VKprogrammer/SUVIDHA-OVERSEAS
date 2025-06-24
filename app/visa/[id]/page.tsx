@@ -315,6 +315,7 @@ const visaData: Record<string, VisaDetails> = {
 }
 
 export default function VisaDetailPage({ params }: { params: { id: string } }) {
+
   const visa = visaData[params.id]
 
   if (!visa) {
@@ -339,7 +340,7 @@ export default function VisaDetailPage({ params }: { params: { id: string } }) {
       {/* Header */}
       <div className="bg-gradient-to-r from-orange-500 via-orange-600 to-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <Link href="/" className="inline-flex items-center text-orange-200 hover:text-white mb-6 transition-colors">
+          <Link href="/visa" className="inline-flex items-center text-orange-200 hover:text-white mb-6 transition-colors">
             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
