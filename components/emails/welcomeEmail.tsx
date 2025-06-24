@@ -33,7 +33,7 @@ export default function WelcomeEmail({ email }: WelcomeEmailProps) {
             <Heading style={h1}>Welcome aboard! 🎉</Heading>
             <Text style={text}>Hi there,</Text>
             <Text style={text}>
-              Thank you for subscribing to our newsletter! We're excited to have you join our community of students and professionals pursuing educational opportunities worldwide.
+              Thank you for subscribing to our newsletter of Suvidha Overseas! We're excited to have you join our community of students and professionals pursuing educational opportunities worldwide.
             </Text>
             <Text style={text}>Here's what you can expect from us:</Text>
             <Text style={list}>
@@ -59,7 +59,7 @@ export default function WelcomeEmail({ email }: WelcomeEmailProps) {
             </Text>
             <Text style={text}>
               Best regards,<br />
-              The Education Team
+              The Suvidha Overseas Team
             </Text>
             <Text style={footer}>
               You're receiving this email because you subscribed to our newsletter with {email}.<br />

@@ -15,7 +15,7 @@ export async function subscribeToNewsletter(email: string) {
 
     // Send welcome email
     const { data, error } = await resend.emails.send({
-      from: "suvidhafoundation.com",
+      from: "onboarding@resend.dev",
       to: [email],
       subject: "Welcome to Our Newsletter! 🎓",
       react: WelcomeEmail({ email }),
