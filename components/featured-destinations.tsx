@@ -1,3 +1,6 @@
+"use client"
+
+import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { ArrowRight, DollarSign, Clock } from "lucide-react"
@@ -5,6 +8,7 @@ import { ArrowRight, DollarSign, Clock } from "lucide-react"
 export default function FeaturedDestinations() {
   const destinations = [
     {
+      slug: "usa",
       country: "United States",
       flag: "🇺🇸",
       image: "/us.jpeg?height=200&width=300",
@@ -15,6 +19,7 @@ export default function FeaturedDestinations() {
       popularCourses: ["Engineering", "Business", "Computer Science"],
     },
     {
+      slug: "canada",
       country: "Canada",
       flag: "🇨🇦",
       image: "/canada.jpg?height=200&width=300",
@@ -25,6 +30,7 @@ export default function FeaturedDestinations() {
       popularCourses: ["Engineering", "Healthcare", "Business"],
     },
     {
+      slug: "uk",
       country: "United Kingdom",
       flag: "🇬🇧",
       image: "/uk.jpg?height=200&width=300",
@@ -35,6 +41,7 @@ export default function FeaturedDestinations() {
       popularCourses: ["Business", "Law", "Arts & Humanities"],
     },
     {
+      slug: "australia",
       country: "Australia",
       flag: "🇦🇺",
       image: "/aus.jpg?height=200&width=300",
@@ -45,6 +52,7 @@ export default function FeaturedDestinations() {
       popularCourses: ["Engineering", "Medicine", "Business"],
     },
     {
+      slug: "germany",
       country: "Germany",
       flag: "🇩🇪",
       image: "/germany.jpeg?height=200&width=300",
@@ -55,6 +63,7 @@ export default function FeaturedDestinations() {
       popularCourses: ["Engineering", "Sciences", "Technology"],
     },
     {
+      slug: "newzealand",
       country: "New Zealand",
       flag: "🇳🇿",
       image: "/nz.jpg?height=200&width=300",
@@ -131,9 +140,11 @@ export default function FeaturedDestinations() {
                   </div>
                 </div>
 
-                <Button className="w-full group-hover:bg-blue-600 transition-colors">
-                  Explore {dest.country}
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                <Button asChild className="w-full group-hover:bg-blue-600 transition-colors">
+                  <Link href={`/destinations/${dest.slug}`}>
+                    Explore {dest.country}
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -141,8 +152,8 @@ export default function FeaturedDestinations() {
         </div>
 
         <div className="text-center mt-16">
-          <Button size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
-            View All Destinations
+          <Button asChild size="lg" variant="outline" className="border-blue-600 text-blue-600 hover:bg-blue-50">
+            <Link href="/destinations">View All Destinations</Link>
           </Button>
         </div>
       </div>
