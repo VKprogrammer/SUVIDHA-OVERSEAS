@@ -6,7 +6,7 @@ const dbConfig = {
   host: 'localhost',
 //   port: 3306, // Default MySQL port, change only if you explicitly use 80
   user: 'root', // 👈 Change this if you use a different username
-  password: 'vijay@2003', // 👈 Add your actual password
+  password: '', //  Add your actual password
   database: 'suvidha_db'
 };
 
