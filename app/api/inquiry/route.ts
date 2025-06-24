@@ -7,7 +7,7 @@ export async function POST(request: Request) {
   const connection = await mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "vijay@2003", // ⬅️ Put your real MySQL password if any
+    password: "", // ⬅️ Put your real MySQL password if any
     database: "suvidha_db",
   })
 
