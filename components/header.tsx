@@ -101,7 +101,9 @@ export default function Header() {
                  Login
                   
                 </Button>
-                <Button className="bg-orange-500 hover:bg-orange-600 text-white">Book Free Consultation</Button>
+                <a href="#inquiries">
+                  <Button className="bg-orange-500 hover:bg-orange-600 text-white">Book Free Consultation</Button>
+                </a>
               </div>
             </div>
           </div>

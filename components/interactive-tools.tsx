@@ -99,9 +99,11 @@ export default function InteractiveTools() {
           <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
             While our tools provide great insights, nothing beats personalized consultation. Book a free session with our expert counselors.
           </p>
-          <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
+         <a href="#inquiries">
+           <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
             Book Free Consultation
           </Button>
+         </a>
         </div>
       </div>
     </section>

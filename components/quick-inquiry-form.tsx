@@ -1,5 +1,6 @@
 "use client"
 
+
 import type React from "react"
 
 import { useState } from "react"
@@ -85,6 +86,7 @@ export default function QuickInquiryForm() {
   }
 
   return (
+    <div id="inquiries">
     <section className="py-16 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
@@ -190,5 +192,6 @@ export default function QuickInquiryForm() {
         </Card>
       </div>
     </section>
+    </div>
   )
 }

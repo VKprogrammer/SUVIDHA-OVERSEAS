@@ -108,9 +108,11 @@ export default function ServicesOverview() {
         </div>
 
         <div className="text-center mt-16">
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4">
+          <a href="#inquiries">
+            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4">
             Book Your Free Consultation Now
           </Button>
+          </a>
         </div>
       </div>
     </section>
